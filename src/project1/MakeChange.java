@@ -2,11 +2,11 @@ package project1;
 
 import java.util.Scanner;
 import java.lang.Math;
+import java.lang.Math;
+import java.lang.Math;
 
 public class MakeChange {
 	public static void main(String[] args) {
-		 
-		 double amountOfBill;
 		 
 		 Scanner sc = new Scanner(System.in);
 		 
@@ -27,54 +27,64 @@ public class MakeChange {
 		 }
 		 
 		 else if(price < money) {
+			
+		 
+			 double twentyDollar = (int)(change / 20);
+			 change = change % 20;
 			 
-			amountOfBill = (int)(change / 20);
-			change = change % 20;
-			System.out.println(Math.round(amountOfBill) + " of $20 are change");
+			 double tenDollar = (int)(change / 10);
+			 change = change % 10;
+			 
+			 double fiveDollar = (int)(change / 5);
+			 change = change % 5;
+			 
+			 double oneDollar = (int)(change / 1);
+			 change = change % 1;
+			 
+			 double quaters = (int)(change / 0.25);
+			 change = change % 0.25;
+			 
+			 double dimes = (int)(change / 0.1);
+			 change = change % 0.1;
 			
-			
-			if(change % 20 != 0) {
-				amountOfBill = (int)(change / 10);
-				change = change % 10;
-				System.out.println(Math.round(amountOfBill) + " of $10 are change");
-			
-				if(change % 10 != 0) {
-					amountOfBill = (int)(change / 5);
-					change = change % 5;
-					System.out.println(Math.round(amountOfBill) + " of $5 are change");
-					
-					if(change % 5 != 0) {
-						amountOfBill = (int)(change / 1);
-						change = change % 1;
-						System.out.println(Math.round(amountOfBill) + " of $1 are change");
-						
-						if(change % 1 != 0) {
-							amountOfBill = (int)(change / 0.25);
-							change = change % 0.25;
-							System.out.println(Math.round(amountOfBill) + " of 25c are change");
-							
-							if(change % 0.25 != 0) {
-								amountOfBill = (int)(change / 0.10);
-								change = change % 0.10;
-								System.out.println(Math.round(amountOfBill) + " of 10c are change");
-								
-								if(change % 0.10 != 0) {
-									amountOfBill = (int)(change / 0.05);
-									change = change % 0.05;
-									System.out.println(Math.round(amountOfBill) + " of 5c are change");
-									
-									if(change % 0.05 != 0) {
-										amountOfBill = (change / 0.01);
-										change = change % 0.01;
-										System.out.println(Math.round(amountOfBill) + " of 1c are change");
-										
-									}
-								}
-							}
-						}
-					}
-				}
-			}
+			 double nickles = (int)(change / 0.05);
+			 change = change % 0.05;
+			 
+			 double pennies = (change / 0.01);
+			 change = change % 0.01;
+					 
+			 if((twentyDollar) != 0) {
+				 System.out.print( Math.round(twentyDollar) + " of twenty dollar, ");
+			 }
+			 
+			 if((tenDollar) != 0) {
+				 System.out.print(Math.round(tenDollar) + " of ten dollar, ");
+			 }
+			 
+			 if((fiveDollar) != 0) {
+				 System.out.print(Math.round(fiveDollar) + " of five dollar, ");
+			 }
+			 
+			 if((oneDollar) != 0) {
+				 System.out.print(Math.round(oneDollar) + " of one dollar, ");
+			 }
+			 
+			 if((quaters) != 0) {
+				 System.out.print(Math.round(quaters) + " quaters, ");
+			 }
+			 
+			 if((dimes) != 0) {
+				 System.out.print(Math.round(dimes) + " dimes, ");
+			 }
+			 
+			 if((nickles) != 0) {
+				 System.out.print(Math.round(nickles) + " nickles, ");
+			 }
+			 
+			 if((pennies) != 0) {
+				 System.out.print(Math.round(pennies) + " pennies, ");
+			 }
+			 
 		 }
 		 sc.close();
 	}

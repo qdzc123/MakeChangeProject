@@ -1,13 +1,16 @@
 # MakeChangeProject
 
+### Week 1 Homework Project for Skill Distillery
+
 ## Description
 
-### This is MakeChangeProject. Enter the price and the money you receive. It will show the change.
+This is MakeChangeProject. Enter the price and the money you receive. It will show the change not including denominations.
 
 ## Technologies used
 
-### This is used in every store. When the customers pay, the owners or workers don't have to calculate to find the amount of change.
+Java
+Eclipse
 
 ## What I learn
 
-### I learn how to use mod and if statement well. The project with the description give me a sequence to learn them deeper.
+I learn how to use modulus operator and if statement well. The project with the description give me a sequence to learn them deeper.
